@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'loader',
+  name: 'loader'
 }
 </script>
 
@@ -27,4 +27,3 @@ export default {
   color: #666;
 }
 </style>
-

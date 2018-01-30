@@ -2,19 +2,15 @@ import actions from './actions'
 import getters from './getters'
 import mutations from './mutations'
 
-import posts from './posts'
-
 export default {
+  namespaced: true,
   actions,
   getters,
-  modules: {
-    posts
-  },
   mutations,
   state: {
-    control: {
-      showLoader: false,
-      showToast: false
+    data: {
+      posts: [],
+      post: null
     }
   }
 }

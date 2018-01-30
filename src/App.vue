@@ -1,14 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <loader v-if="loading"></loader>
     <router-view/>
   </div>
 </template>
 
 <script>
 import Loader from './components/Loader'
+import globalMixin from './mixins/global'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Loader
+  },
+  mixins: [
+    globalMixin
+  ]
 }
 </script>
 
